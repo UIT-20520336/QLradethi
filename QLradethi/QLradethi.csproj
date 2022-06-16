@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D4A55434-39B8-438E-AFD0-38808C1F59FE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>QLradethi</RootNamespace>
+    <AssemblyName>QLradethi</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="baocaomonhoc.cs" />
+    <Compile Include="baocaonamGV_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="baocaonamGV_Form.Designer.cs">
+      <DependentUpon>baocaonamGV_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="baocaonham_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="baocaonham_Form.Designer.cs">
+      <DependentUpon>baocaonham_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="capnhatcauhoi_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="capnhatcauhoi_Form.Designer.cs">
+      <DependentUpon>capnhatcauhoi_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="capnhatchamthi_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="capnhatchamthi_Form.Designer.cs">
+      <DependentUpon>capnhatchamthi_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="capnhatgv_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="capnhatgv_Form.Designer.cs">
+      <DependentUpon>capnhatgv_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="capnhatlop_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="capnhatlop_Form.Designer.cs">
+      <DependentUpon>capnhatlop_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="chamthi_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="chamthi_Form.Designer.cs">
+      <DependentUpon>chamthi_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="chitietdethi_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="chitietdethi_Form.Designer.cs">
+      <DependentUpon>chitietdethi_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="danhsachbaicham_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="danhsachbaicham_Form.Designer.cs">
+      <DependentUpon>danhsachbaicham_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="danhsachcauhoi_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="danhsachcauhoi_Form.Designer.cs">
+      <DependentUpon>danhsachcauhoi_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="danhsachdethi_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="danhsachdethi_Form.Designer.cs">
+      <DependentUpon>danhsachdethi_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="danhsachlopGV_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="danhsachlopGV_Form.Designer.cs">
+      <DependentUpon>danhsachlopGV_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="danhsachlop_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="danhsachlop_Form.Designer.cs">
+      <DependentUpon>danhsachlop_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="danhsachmonhoc_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="danhsachmonhoc_Form.Designer.cs">
+      <DependentUpon>danhsachmonhoc_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="loginF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loginF.Designer.cs">
+      <DependentUpon>loginF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="main_adminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main_adminForm.designer.cs">
+      <DependentUpon>main_adminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="main_giaovienFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main_giaovienFrom.Designer.cs">
+      <DependentUpon>main_giaovienFrom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="danhsachgv_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="danhsachgv_Form.Designer.cs">
+      <DependentUpon>danhsachgv_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="capnhatmonhoc_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="capnhatmonhoc_Form.Designer.cs">
+      <DependentUpon>capnhatmonhoc_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="suaquydinh_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="suaquydinh_Form.Designer.cs">
+      <DependentUpon>suaquydinh_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="themcauhoi_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="themcauhoi_Form.Designer.cs">
+      <DependentUpon>themcauhoi_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="themdethi_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="themdethi_Form.Designer.cs">
+      <DependentUpon>themdethi_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="themgv_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="themgv_Form.Designer.cs">
+      <DependentUpon>themgv_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="themlop_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="themlop_Form.Designer.cs">
+      <DependentUpon>themlop_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="themmonhoc_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="themmonhoc_Form.Designer.cs">
+      <DependentUpon>themmonhoc_Form.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="baocaonamGV_Form.resx">
+      <DependentUpon>baocaonamGV_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="baocaonham_Form.resx">
+      <DependentUpon>baocaonham_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="capnhatcauhoi_Form.resx">
+      <DependentUpon>capnhatcauhoi_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="capnhatchamthi_Form.resx">
+      <DependentUpon>capnhatchamthi_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="capnhatgv_Form.resx">
+      <DependentUpon>capnhatgv_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="capnhatlop_Form.resx">
+      <DependentUpon>capnhatlop_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chamthi_Form.resx">
+      <DependentUpon>chamthi_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chitietdethi_Form.resx">
+      <DependentUpon>chitietdethi_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="danhsachbaicham_Form.resx">
+      <DependentUpon>danhsachbaicham_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="danhsachcauhoi_Form.resx">
+      <DependentUpon>danhsachcauhoi_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="danhsachdethi_Form.resx">
+      <DependentUpon>danhsachdethi_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="danhsachlopGV_Form.resx">
+      <DependentUpon>danhsachlopGV_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="danhsachlop_Form.resx">
+      <DependentUpon>danhsachlop_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="danhsachmonhoc_Form.resx">
+      <DependentUpon>danhsachmonhoc_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loginF.resx">
+      <DependentUpon>loginF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main_adminForm.resx">
+      <DependentUpon>main_adminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main_giaovienFrom.resx">
+      <DependentUpon>main_giaovienFrom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="danhsachgv_Form.resx">
+      <DependentUpon>danhsachgv_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="capnhatmonhoc_Form.resx">
+      <DependentUpon>capnhatmonhoc_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="suaquydinh_Form.resx">
+      <DependentUpon>suaquydinh_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="themcauhoi_Form.resx">
+      <DependentUpon>themcauhoi_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="themdethi_Form.resx">
+      <DependentUpon>themdethi_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="themgv_Form.resx">
+      <DependentUpon>themgv_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="themlop_Form.resx">
+      <DependentUpon>themlop_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="themmonhoc_Form.resx">
+      <DependentUpon>themmonhoc_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-uit-300x248.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_257423.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\R.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
